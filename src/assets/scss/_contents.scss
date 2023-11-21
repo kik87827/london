@@ -516,6 +516,225 @@ input.btn_submitbox{}
 /* form */
 
 
+/* ui component */
+.middle_visual_wrap{}
+.middle_visual_pixin{
+    &.bg_type2{
+
+    }
+}
+.middle_visual_copy_group{
+    &.type2{
+        .middle_visual_main_copy{}
+        .middle_visual_sub_copy{}
+    }
+}
+.middle_visual_main_copy{}
+.middle_visual_sub_copy{}
+
+.personal_flexbox_wrap{}
+.personal_flexbox{}
+.personal_flexbox_long_cols{}
+.personal_profile_box{}
+.personal_caption_cols{}
+.personal_caption_thumnail{}
+.ico_personal{}
+.personal_caption_spec{}
+.personal_caption_main_spec{}
+.personal_caption_sub_spec{}
+
+.personal_summary_cols{}
+.personal_summary_liquid{}
+.ps_util_para{}
+.ps_data_item_wrap{}
+.ps_data_item{
+    &:last-of-type{}
+}
+.ico_ps{
+    &.ico_men{}
+    &.ico_wallet{}
+}
+.ps_summary_text{}
+.ps_value_inbox{}
+.ps_value_text{}
+.ps_unit_text{}
+.personal_summary_pixed{}
+.btn_more{}
+.btn_more_text{
+    &:after{}
+}
+
+.personal_flexbox_short_cols{}
+.ico_flexbox_row{}
+.ico_flexbox{
+    &.ico_men{}
+}
+.text_flexbox_row{}
+.text_flexbox_copy{}
+
+.board_linkage_box_wrap{}
+.board_linkage_pixin{}
+.board_linkage_title_row{}
+.board_linkage_title{}
+.board_linkage_box{}
+.board_linkage_ico_cols{}
+.ico_board{}
+.board_linkage_contents_cols{}
+.board_linkage_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.board_linkage_group{
+    .box_flag{}
+}
+.board_linkage_item{}
+.box_flag{}
+.board_linkage_else{}
+.btn_more_ico{}
+
+
+.wallet_flexbox_wrap{}
+.wallet_flexbox_pixin{}
+.wallet_flexbox_cols{}
+.wallet_flexbox_container{}
+.wallet_flexbox_title_row{}
+.wallet_flexbox_title{}
+.wallet_flexbox_contents{}
+.wallet_flexbox_total_row{}
+.wallet_flexbox_total_row{}
+.wft_ico_cols{}
+.ico_wft{}
+.wft_value_cols{}
+.wft_value{
+    &.type2{}
+}
+.wallet_flexbox_data_row{}
+.wft_guide_para{}
+.wft_data_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.wft_summary_cols{}
+.wft_summary_para{}
+.wft_flag_row{
+    .text_flagbox{}
+}
+.text_flagbox{}
+.wft_value_cols{}
+.wft_value_group{
+    &.type2{
+        .ico_wft{}
+        .wft_value_text{}
+        .wft_value_else{}
+    }
+}
+.ico_wft{}
+.wft_value_text{}
+.wft_value_else{}
+.wallet_flexbox_btn_row{
+    .btn_link_box{}
+}
+
+.copy_guide_card_wrap{}
+.copy_guide_card{}
+.copy_guide_main_cols{}
+.copy_guide_text_item{}
+.cg_text_ico_group{}
+.cg_text_ico{}
+.cg_text_group{}
+.cg_text_main{}
+.cg_text_sub{}
+.copy_guide_sub_cols{}
+.btn_copy_box{
+    &.type2{
+        .btn_copy_box_text{}
+    }
+}
+.btn_copy_box_text{}
+
+
+.submenu_item_zone{margin:0 auto;height:0;position:relative;z-index:10;}
+.submenu_item_list{height:rem(65);display:flex;position:relative;z-index:2;background:#434555;border-radius:0 0 rem(12) rem(12);}
+.submenu_item{
+    border-right:1px solid rgba(255,255,255,.12);margin:rem(16) 0; display:flex;align-items:center; position:relative;
+    &.define_home{flex:0 0 rem(70)}
+    
+    &:last-of-type{}
+
+    &:nth-of-type(1){z-index:5;}
+    &:nth-of-type(2){z-index:4;}
+    &:nth-of-type(3){z-index:3;}
+}
+.btn_submenu_home{display:flex;width:100%;height:rem(40);align-items: center;justify-content: center;}
+.submenu_one{display:flex;align-items:center;padding:0 rem(50) 0 rem(20);min-width:rem(215);box-sizing: border-box;width:100%;position:relative;height:100%;
+    &:after{
+        display:block;content:'';width:rem(10);height:rem(10);border-right:rem(1) solid #fff;border-bottom:rem(1) solid #fff;
+        position:absolute;top:50%;right:rem(20);margin-top:rem(-3);
+        transform:translateZ(0) translateY(-50%) rotate(45deg);
+    }
+    &.active{
+        &:after{ transform:translateZ(0) translateY(-50%) rotate(225deg);margin-top:rem(3)}
+    }
+    &.only_text{
+        cursor:default;
+        &:after{display:none;}
+    }
+}
+.submenu_text{color:#fff;display:inline-block;line-height:1;font-size:rem(17);padding-bottom:rem(2)}
+.submenu_two_list_wrap{transition:500ms;overflow:hidden;height:0;position:absolute;top:calc(100% + rem(16));left:0;width:100%;box-sizing: border-box;border-radius:0 0 rem(12) rem(12); }
+.submenu_two_list_wrap.active{display:block;}
+.submenu_two_list{
+    background:#434555;
+    > li{
+        border-top:1px solid rgba(255,255,255,.08);
+        &:last-of-type{}
+    }
+}
+.submenu_two{display:block;font-size:rem(16);padding:rem(15) rem(20);color:#fff;}
+
+.ico_maphome{
+    display:flex;align-items:center;justify-content:center;font-size:0;line-height:0;
+    img{max-width:14px;}
+}
+
+.sub_contents_zone{margin:0 auto rem(100);max-width:rem(1280);padding:0 rem(30);position:relative;}
+.sub_title_row{margin-bottom:rem(55);text-align: center;}
+.sub_title{font-size:rem(30);color:#2b2b2b;line-height:1;font-weight:500;}
+.sub_contents_row{
+}
+
+.card_pro_flex_wrap{display:flex; gap:rem(30);
+    & + .data_box_list_wrap{margin-top:rem(60);}
+}
+.card_pro_img_cols{flex:0 0 rem(500);}
+.card_pro_render{border-radius:rem(13);background:#2d2f3c;height:rem(290);position:relative;color:#fff;}
+.card_pro_render_inner{display:flex;height:100%;width:100%;flex-direction: column; justify-content: space-between;position:absolute;top:0;left:0; box-sizing: border-box;padding:rem(28) rem(34);}
+.card_pro_logo_row{display:flex;align-items: flex-start;gap:rem(20);}
+.card_pro_logo_img{
+    max-width:rem(93); 
+    img{}
+}
+.card_pro_logo_text{font-size:rem(18);color:#fff;line-height:1;font-weight:500;padding-top:rem(14);}
+.card_pro_number_row{padding-top:rem(30)}
+.card_pro_number_main{font-size:rem(24);font-weight:700;}
+.card_pro_number_sub{font-size:rem(16);font-weight:500;margin-top:rem(10);}
+.card_pro_copy_row{text-align: right;}
+.card_pro_copy{font-size:rem(17);color:#fff;}
+.btn_card_pro_more{position:absolute;top:rem(15);right:rem(10);width:rem(40);height:rem(40);background:url("../images/ico_card_more.png") no-repeat 50% 50%/rem(4) auto;}
+.card_pro_spec_cols{
+    flex: 1; display:flex; flex-direction: column;
+    .btn_submit_box_wrap{padding:0 rem(100);flex:0;}
+}
+.card_pro_btn_row{
+    flex:1;display:flex; align-items: center; justify-content: center;
+    .btn_copy_box{}
+}
+.card_pro_spec_title{}
+/* // ui component */
+
+
 
 // component guide
 .source_his_item{margin-bottom:rem(100)}

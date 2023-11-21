@@ -3435,6 +3435,252 @@ html.smooth {
   }
 }
 /* form */
+/* ui component */
+.submenu_item_zone {
+  margin: 0 auto;
+  height: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.submenu_item_list {
+  height: 4.0625rem;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  background: #434555;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.submenu_item {
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.submenu_item.define_home {
+  flex: 0 0 4.375rem;
+}
+.submenu_item:nth-of-type(1) {
+  z-index: 5;
+}
+.submenu_item:nth-of-type(2) {
+  z-index: 4;
+}
+.submenu_item:nth-of-type(3) {
+  z-index: 3;
+}
+
+.btn_submenu_home {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.submenu_one {
+  display: flex;
+  align-items: center;
+  padding: 0 3.125rem 0 1.25rem;
+  min-width: 13.4375rem;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.submenu_one:after {
+  display: block;
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  border-right: 0.0625rem solid #fff;
+  border-bottom: 0.0625rem solid #fff;
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  margin-top: -0.1875rem;
+  transform: translateZ(0) translateY(-50%) rotate(45deg);
+}
+.submenu_one.active:after {
+  transform: translateZ(0) translateY(-50%) rotate(225deg);
+  margin-top: 0.1875rem;
+}
+.submenu_one.only_text {
+  cursor: default;
+}
+.submenu_one.only_text:after {
+  display: none;
+}
+
+.submenu_text {
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  font-size: 1.0625rem;
+  padding-bottom: 0.125rem;
+}
+
+.submenu_two_list_wrap {
+  transition: 500ms;
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.submenu_two_list_wrap.active {
+  display: block;
+}
+
+.submenu_two_list {
+  background: #434555;
+}
+.submenu_two_list > li {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.submenu_two {
+  display: block;
+  font-size: 1rem;
+  padding: 0.9375rem 1.25rem;
+  color: #fff;
+}
+
+.ico_maphome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  line-height: 0;
+}
+.ico_maphome img {
+  max-width: 14px;
+}
+
+.sub_contents_zone {
+  margin: 0 auto 6.25rem;
+  max-width: 80rem;
+  padding: 0 1.875rem;
+  position: relative;
+}
+
+.sub_title_row {
+  margin-bottom: 3.4375rem;
+  text-align: center;
+}
+
+.sub_title {
+  font-size: 1.875rem;
+  color: #2b2b2b;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.card_pro_flex_wrap {
+  display: flex;
+  gap: 1.875rem;
+}
+.card_pro_flex_wrap + .data_box_list_wrap {
+  margin-top: 3.75rem;
+}
+
+.card_pro_img_cols {
+  flex: 0 0 31.25rem;
+}
+
+.card_pro_render {
+  border-radius: 0.8125rem;
+  background: #2d2f3c;
+  height: 18.125rem;
+  position: relative;
+  color: #fff;
+}
+
+.card_pro_render_inner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 1.75rem 2.125rem;
+}
+
+.card_pro_logo_row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.card_pro_logo_img {
+  max-width: 5.8125rem;
+}
+.card_pro_logo_text {
+  font-size: 1.125rem;
+  color: #fff;
+  line-height: 1;
+  font-weight: 500;
+  padding-top: 0.875rem;
+}
+
+.card_pro_number_row {
+  padding-top: 1.875rem;
+}
+
+.card_pro_number_main {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card_pro_number_sub {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.625rem;
+}
+
+.card_pro_copy_row {
+  text-align: right;
+}
+
+.card_pro_copy {
+  font-size: 1.0625rem;
+  color: #fff;
+}
+
+.btn_card_pro_more {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0.625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url("../images/ico_card_more.png") no-repeat 50% 50%/0.25rem auto;
+}
+
+.card_pro_spec_cols {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card_pro_spec_cols .btn_submit_box_wrap {
+  padding: 0 6.25rem;
+  flex: 0;
+}
+
+.card_pro_btn_row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* // ui component */
 .source_his_item {
   margin-bottom: 6.25rem;
 }
@@ -3500,5 +3746,4 @@ html.smooth {
     font-size: 0.875rem;
   }
 }
-/* main */
 /*# sourceMappingURL=style.css.map */
