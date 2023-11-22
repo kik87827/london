@@ -1222,6 +1222,7 @@ body ::-webkit-scrollbar-track {
   position: relative;
   border-radius: 1.6875rem;
   border: 0.0625rem solid #d0d0d0;
+  z-index: 5;
 }
 .hgroup_util_toggle_item .hgroup_util_item {
   z-index: 2;
