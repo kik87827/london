@@ -1,0 +1,72 @@
+@media (prefers-color-scheme: dark) {
+    .middle_visual_wrap{background-color:#7275f6;}
+    .middle_visual_main_copy{color:#fff !important;}
+    .middle_visual_sub_copy{color:#fff !important;}
+    .middle_visual_pixin{
+        background-image:url("../images/main_visual_dark.jpg");
+        &.bg_type2{
+            background-image:url("../images/sub_visual_dark.jpg");
+        }
+        &:after{
+            background-image:url("../images/bg_mb_mv_02_dark.jpg");
+        }
+    }
+
+    .personal_flexbox_long_cols{background-color:#404050;}
+    .personal_flexbox_short_cols{background-color:#404050;}
+    .personal_caption_thumnail{background-color:#30303a;}
+
+    .board_linkage_title{color:#fff;}
+    .board_linkage_box{background-color:#30313a;border:0;}
+    .ico_board{background-color:#585cf2;background-image:url("../images/ico_mike_40_w.png");background-size:rem(31) rem(42);}
+    .board_linkage_ico{background-image:url("../images/ico_docu_18_dark.png");}
+    .board_linkage_else,
+    .board_linkage_item{color:#fff;}
+
+    .btn_more_ico{
+        &:before,
+        &:after{background-color:#fff;}
+    }
+
+    .wallet_flexbox_title{color:#fff;}
+    .ico_wallet{background-image:url("../images/ico_wallet_45_dark.png");}
+    .wft_value_text,
+    .wft_value{color:#0082ff;}
+    .ico_wft{background-color:#0082ff;}
+
+    .wft_guide_para,
+    .wft_summary_para,
+    .wft_value_else{color:#fff;}
+
+    .wallet_flexbox_total_row{border-bottom:1px solid rgba(255,255,255,.1)}
+    .wft_data_list{
+        > li{border-top:1px solid rgba(255,255,255,.1)}
+    }
+    .wallet_flexbox_btn_row{border-top:1px solid rgba(255,255,255,.1)}
+    .btn_link_box{border-color:#404149;background-color:#404149;}
+    .btn_link_box_text{color:#fff;
+        &:after{border-color:#fff;}
+    }
+
+
+    .copy_guide_card{background:#30313a;}
+    .btn_copy_box{
+        background:#45464e;
+
+        &.type2{
+            background-color:#585cf2;
+        }
+    }
+    .btn_copy_box_text{color:#fff;}
+
+    .submenu_item_list{background:#30313a;
+        box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.12);
+    }
+    .submenu_two_list{background:#30313a;}
+
+    .wallet_flexbox_contents{border:0;background-color:#30313a;}
+
+    .sub_title{color:#fff;}
+
+    .card_pro_render{background-color:#1b1b22;}
+}
