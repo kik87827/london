@@ -8,5 +8,14 @@
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/select2.min.js"></script>
     <script src="./assets/js/front.js"></script>
+    <script>
+        // 퍼블확인용
+        let theme = window.location.href.split('?')[1];
+        let theme_2 = theme !== undefined ? theme.split('#')[0] : null;
+
+        if(theme_2 === "dark"){
+            document.querySelector("html").classList.add("dark_theme");
+        }
+    </script>
     <title></title>
 </head>

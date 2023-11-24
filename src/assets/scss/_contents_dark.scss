@@ -4,12 +4,6 @@
     .middle_visual_sub_copy{color:#fff !important;}
     .middle_visual_pixin{
         background-image:url("../images/main_visual_dark.jpg");
-        &.bg_type2{
-            background-image:url("../images/sub_visual_dark.jpg");
-        }
-        &:after{
-            background-image:url("../images/bg_mb_mv_02_dark.jpg");
-        }
     }
 
     .personal_flexbox_long_cols{background-color:#404050;}
@@ -69,4 +63,12 @@
     .sub_title{color:#fff;}
 
     .card_pro_render{background-color:#1b1b22;}
+}
+
+@media (max-width:1023px){
+    .dark_theme{
+        .middle_visual_pixin{
+            background-image:url("../images/bg_visual_dark.png");
+        }
+    }
 }
