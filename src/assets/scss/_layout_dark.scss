@@ -1,5 +1,5 @@
 /* layout */
-@media (prefers-color-scheme: dark) {
+.dark_theme{
     body{background:#26272f;}
     .header_wrap{background:#585cf2;
         &::before{background-color:#fff;opacity:.3;}

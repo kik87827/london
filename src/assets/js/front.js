@@ -37,6 +37,14 @@ function commonInit() {
   function browserAdd(opt) {
     document.querySelector("html").classList.add(opt);
   }
+  
+  // 퍼블확인용
+  let url = window.location.href.split('?')[1];
+  let url_2 = url !== undefined ? url.split('#')[0] : null;
+
+  if(url_2 === "dark"){
+      document.querySelector("html").classList.add("dark_theme");
+  }
 }
 
 /*

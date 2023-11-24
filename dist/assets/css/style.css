@@ -1789,94 +1789,93 @@ body ::-webkit-scrollbar-track {
   }
 }
 /* layout */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #26272f;
-  }
-  .header_wrap {
-    background: #585cf2;
-  }
-  .header_wrap::before {
-    background-color: #fff;
-    opacity: 0.3;
-  }
-  .nav_depth_list_wrap {
-    background: #585cf2;
-  }
-  .toplogo_link {
-    background-image: url("../images/toplogo_w.png");
-  }
-  .nav_menu {
-    color: #fff;
-  }
-  .nav_menu:after {
-    background-color: #fff;
-  }
-  .nav_depth_one {
-    color: #fff;
-  }
-  .nav_else_item,
-.nav_depth_two {
-    color: #fff;
-    opacity: 0.7;
-  }
-  .hgroup_util_toggle_item {
-    border: 0.0625rem solid rgba(255, 255, 255, 0.8);
-  }
-  .hgroup_util_toggle_item .hgroup_util_item {
-    background: #585cf2;
-  }
-  .hgroup_util_toggle_item .hgroup_util_item:after {
-    border-right: 1px solid rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  }
-  .ico_nation {
-    background-image: url("../images/ico_earth_img_w.png");
-  }
-  .hgroup_util_item .hgroup_util_text {
-    color: #fff;
-  }
-  .hgroup_util_option_list_wrap {
-    background: #585cf2;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
-  .hgroup_util_option_list > li {
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-  .hgroup_option_item {
-    color: #fff;
-  }
-  .btn_hgroup_menu .menu_icon {
-    background-image: url("../images/ico_total_menu_w.png");
-  }
-  .btn_mb_menu .menu_icon {
-    background-image: url("../images/ico_total_menu_w.png");
-  }
-  .mbutil_low {
-    background: #585cf2;
-  }
-  .mobile_mainmenu_wrap {
-    background: #26272f;
-  }
-  .mbmenu_vlist > li {
-    border-bottom-color: rgba(255, 255, 255, 0.3);
-  }
-  .mbmenu_one {
-    color: #fff;
-    opacity: 0.9;
-  }
-  .footer_wrap {
-    background-color: #1b1b20;
-  }
-  .footer_item_para {
-    opacity: 0.4;
-  }
-  .btn_bottom_go {
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: #1c1c1c;
-  }
+.dark_theme body {
+  background: #26272f;
 }
+.dark_theme .header_wrap {
+  background: #585cf2;
+}
+.dark_theme .header_wrap::before {
+  background-color: #fff;
+  opacity: 0.3;
+}
+.dark_theme .nav_depth_list_wrap {
+  background: #585cf2;
+}
+.dark_theme .toplogo_link {
+  background-image: url("../images/toplogo_w.png");
+}
+.dark_theme .nav_menu {
+  color: #fff;
+}
+.dark_theme .nav_menu:after {
+  background-color: #fff;
+}
+.dark_theme .nav_depth_one {
+  color: #fff;
+}
+.dark_theme .nav_else_item,
+.dark_theme .nav_depth_two {
+  color: #fff;
+  opacity: 0.7;
+}
+.dark_theme .hgroup_util_toggle_item {
+  border: 0.0625rem solid rgba(255, 255, 255, 0.8);
+}
+.dark_theme .hgroup_util_toggle_item .hgroup_util_item {
+  background: #585cf2;
+}
+.dark_theme .hgroup_util_toggle_item .hgroup_util_item:after {
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.dark_theme .ico_nation {
+  background-image: url("../images/ico_earth_img_w.png");
+}
+.dark_theme .hgroup_util_item .hgroup_util_text {
+  color: #fff;
+}
+.dark_theme .hgroup_util_option_list_wrap {
+  background: #585cf2;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.dark_theme .hgroup_util_option_list > li {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.dark_theme .hgroup_option_item {
+  color: #fff;
+}
+.dark_theme .btn_hgroup_menu .menu_icon {
+  background-image: url("../images/ico_total_menu_w.png");
+}
+.dark_theme .btn_mb_menu .menu_icon {
+  background-image: url("../images/ico_total_menu_w.png");
+}
+.dark_theme .mbutil_low {
+  background: #585cf2;
+}
+.dark_theme .mobile_mainmenu_wrap {
+  background: #26272f;
+}
+.dark_theme .mbmenu_vlist > li {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+.dark_theme .mbmenu_one {
+  color: #fff;
+  opacity: 0.9;
+}
+.dark_theme .footer_wrap {
+  background-color: #1b1b20;
+}
+.dark_theme .footer_item_para {
+  opacity: 0.4;
+}
+.dark_theme .btn_bottom_go {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1c1c1c;
+}
+
 /* 공통 요소 */
 .text_emp_sky {
   color: #5c84f9 !important;
@@ -4930,121 +4929,119 @@ html.smooth {
     font-size: 0.875rem;
   }
 }
-@media (prefers-color-scheme: dark) {
-  .middle_visual_wrap {
-    background-color: #7275f6;
-  }
-  .middle_visual_main_copy {
-    color: #fff !important;
-  }
-  .middle_visual_sub_copy {
-    color: #fff !important;
-  }
-  .middle_visual_pixin {
-    background-image: url("../images/main_visual_dark.jpg");
-  }
-  .middle_visual_pixin.bg_type2 {
-    background-image: url("../images/sub_visual_dark.jpg");
-  }
-  .middle_visual_pixin:after {
-    background-image: url("../images/bg_mb_mv_02_dark.jpg");
-  }
-  .personal_flexbox_long_cols {
-    background-color: #404050;
-  }
-  .personal_flexbox_short_cols {
-    background-color: #404050;
-  }
-  .personal_caption_thumnail {
-    background-color: #30303a;
-  }
-  .board_linkage_title {
-    color: #fff;
-  }
-  .board_linkage_box {
-    background-color: #30313a;
-    border: 0;
-  }
-  .ico_board {
-    background-color: #585cf2;
-    background-image: url("../images/ico_mike_40_w.png");
-    background-size: 1.9375rem 2.625rem;
-  }
-  .board_linkage_ico {
-    background-image: url("../images/ico_docu_18_dark.png");
-  }
-  .board_linkage_else,
-.board_linkage_item {
-    color: #fff;
-  }
-  .btn_more_ico:before, .btn_more_ico:after {
-    background-color: #fff;
-  }
-  .wallet_flexbox_title {
-    color: #fff;
-  }
-  .ico_wallet {
-    background-image: url("../images/ico_wallet_45_dark.png");
-  }
-  .wft_value_text,
-.wft_value {
-    color: #0082ff;
-  }
-  .ico_wft {
-    background-color: #0082ff;
-  }
-  .wft_guide_para,
-.wft_summary_para,
-.wft_value_else {
-    color: #fff;
-  }
-  .wallet_flexbox_total_row {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  .wft_data_list > li {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  .wallet_flexbox_btn_row {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  .btn_link_box {
-    border-color: #404149;
-    background-color: #404149;
-  }
-  .btn_link_box_text {
-    color: #fff;
-  }
-  .btn_link_box_text:after {
-    border-color: #fff;
-  }
-  .copy_guide_card {
-    background: #30313a;
-  }
-  .btn_copy_box {
-    background: #45464e;
-  }
-  .btn_copy_box.type2 {
-    background-color: #585cf2;
-  }
-  .btn_copy_box_text {
-    color: #fff;
-  }
-  .submenu_item_list {
-    background: #30313a;
-    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.12);
-  }
-  .submenu_two_list {
-    background: #30313a;
-  }
-  .wallet_flexbox_contents {
-    border: 0;
-    background-color: #30313a;
-  }
-  .sub_title {
-    color: #fff;
-  }
-  .card_pro_render {
-    background-color: #1b1b22;
-  }
+.dark_theme .middle_visual_wrap {
+  background-color: #7275f6;
+}
+.dark_theme .middle_visual_main_copy {
+  color: #fff !important;
+}
+.dark_theme .middle_visual_sub_copy {
+  color: #fff !important;
+}
+.dark_theme .middle_visual_pixin {
+  background-image: url("../images/main_visual_dark.jpg");
+}
+.dark_theme .middle_visual_pixin.bg_type2 {
+  background-image: url("../images/sub_visual_dark.jpg");
+}
+.dark_theme .middle_visual_pixin:after {
+  background-image: url("../images/bg_mb_mv_02_dark.jpg");
+}
+.dark_theme .personal_flexbox_long_cols {
+  background-color: #404050;
+}
+.dark_theme .personal_flexbox_short_cols {
+  background-color: #404050;
+}
+.dark_theme .personal_caption_thumnail {
+  background-color: #30303a;
+}
+.dark_theme .board_linkage_title {
+  color: #fff;
+}
+.dark_theme .board_linkage_box {
+  background-color: #30313a;
+  border: 0;
+}
+.dark_theme .ico_board {
+  background-color: #585cf2;
+  background-image: url("../images/ico_mike_40_w.png");
+  background-size: 1.9375rem 2.625rem;
+}
+.dark_theme .board_linkage_ico {
+  background-image: url("../images/ico_docu_18_dark.png");
+}
+.dark_theme .board_linkage_else,
+.dark_theme .board_linkage_item {
+  color: #fff;
+}
+.dark_theme .btn_more_ico:before, .dark_theme .btn_more_ico:after {
+  background-color: #fff;
+}
+.dark_theme .wallet_flexbox_title {
+  color: #fff;
+}
+.dark_theme .ico_wallet {
+  background-image: url("../images/ico_wallet_45_dark.png");
+}
+.dark_theme .wft_value_text,
+.dark_theme .wft_value {
+  color: #0082ff;
+}
+.dark_theme .ico_wft {
+  background-color: #0082ff;
+}
+.dark_theme .wft_guide_para,
+.dark_theme .wft_summary_para,
+.dark_theme .wft_value_else {
+  color: #fff;
+}
+.dark_theme .wallet_flexbox_total_row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dark_theme .wft_data_list > li {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dark_theme .wallet_flexbox_btn_row {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dark_theme .btn_link_box {
+  border-color: #404149;
+  background-color: #404149;
+}
+.dark_theme .btn_link_box_text {
+  color: #fff;
+}
+.dark_theme .btn_link_box_text:after {
+  border-color: #fff;
+}
+.dark_theme .copy_guide_card {
+  background: #30313a;
+}
+.dark_theme .btn_copy_box {
+  background: #45464e;
+}
+.dark_theme .btn_copy_box.type2 {
+  background-color: #585cf2;
+}
+.dark_theme .btn_copy_box_text {
+  color: #fff;
+}
+.dark_theme .submenu_item_list {
+  background: #30313a;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.12);
+}
+.dark_theme .submenu_two_list {
+  background: #30313a;
+}
+.dark_theme .wallet_flexbox_contents {
+  border: 0;
+  background-color: #30313a;
+}
+.dark_theme .sub_title {
+  color: #fff;
+}
+.dark_theme .card_pro_render {
+  background-color: #1b1b22;
 }
 /*# sourceMappingURL=style.css.map */
