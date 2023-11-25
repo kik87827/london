@@ -163,9 +163,9 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
 }
 .nav_depth_list_inner{display:flex;max-width:rem(1280); margin:0 auto;padding:rem(30) rem(30)}
 .nav_depth_list{
-    flex:1;display:flex; padding:0 3%;
+    flex:1;display:flex; padding:0 0;
     > li{
-        flex:1; padding:0 3%;
+        flex:1; padding:0 0;
         
         &:last-of-type{}
     }
@@ -188,7 +188,7 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
     }
 }
 .nav_else_list{
-    flex:0;padding:0 3%;
+    flex:0;padding:0 0; margin-top:rem(-3);
     > li{
         margin-bottom:rem(20);
         &:last-of-type{margin-bottom:0;}

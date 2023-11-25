@@ -1566,11 +1566,11 @@ body ::-webkit-scrollbar-track {
 .nav_depth_list {
   flex: 1;
   display: flex;
-  padding: 0 3%;
+  padding: 0 0;
 }
 .nav_depth_list > li {
   flex: 1;
-  padding: 0 3%;
+  padding: 0 0;
 }
 .nav_depth_one {
   font-size: 1.125rem;
@@ -1607,7 +1607,8 @@ body ::-webkit-scrollbar-track {
 
 .nav_else_list {
   flex: 0;
-  padding: 0 3%;
+  padding: 0 0;
+  margin-top: -0.1875rem;
 }
 .nav_else_list > li {
   margin-bottom: 1.25rem;
@@ -4283,7 +4284,7 @@ html.smooth {
   display: flex;
   align-items: center;
   padding: 0 3.125rem 0 1.25rem;
-  min-width: 13.4375rem;
+  min-width: 14.375rem;
   box-sizing: border-box;
   width: 100%;
   position: relative;
@@ -4319,6 +4320,7 @@ html.smooth {
   line-height: 1;
   font-size: 1.0625rem;
   padding-bottom: 0.125rem;
+  word-break: keep-all;
 }
 
 .submenu_two_list_wrap {
