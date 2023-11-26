@@ -285,49 +285,49 @@
 						<td class="no"></td>
 						<td class="link"><a href="usdt_identity_step01.html" target="_blank">0105_USDT_Identity_step1</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
+						<td class="work end"></td>
 						<td class="bgo"></td>
 					</tr>
 					<tr>
 						<td class="no"></td>
 						<td class="link"><a href="usdt_identity_step02.html" target="_blank">0105_USDT_Identity_step2</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
+						<td class="work end"></td>
 						<td class="bgo"></td>
 					</tr>
 					<tr>
 						<td class="no"></td>
 						<td class="link"><a href="usdt_identity_step03.html" target="_blank">0105_USDT_Identity_step3</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
+						<td class="work end"></td>
 						<td class="bgo"></td>
 					</tr>
 					<tr>
 						<td class="no"></td>
 						<td class="link"><a href="usdt_application.html" target="_blank">0108_USDT_application</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
+						<td class="work end"></td>
 						<td class="bgo"></td>
 					</tr>
 					<tr>
 						<td class="no"></td>
 						<td class="link"><a href="usdt_history.html" target="_blank">0109_USDT_History</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
+						<td class="work end"></td>
 						<td class="bgo"></td>
 					</tr>
 					<tr>
 						<td class="no"></td>
 						<td class="link"><a href="usdt_transaction.html" target="_blank">0110_USDT_Transaction</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
+						<td class="work end"></td>
 						<td class="bgo"></td>
 					</tr>
 					<tr>
 						<td class="no"></td>
 						<td class="link"><a href="wallet_mywallet.html" target="_blank">0301_Wallet_Mywallet</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
+						<td class="work end"></td>
 						<td class="bgo"></td>
 					</tr>
 					<tr>
@@ -413,9 +413,9 @@
 					$t_href = $this.attr("href");
 
 				if ($this.parent(".link").hasClass("type2")) {
-					$this.parent("td").next(".td_url").append('<a href=' + $t_href + '>' + $t_href + '</a>');
+					$this.parent("td").next(".td_url").append('<a href=' + $t_href + '?dark>' + $t_href + '?dark</a>');
 				} else {
-					$this.parent("td").next(".td_url").append('<a href=' + $t_href + ' target="_blank">' + $t_href + '</a>');
+					$this.parent("td").next(".td_url").append('<a href=' + $t_href + '?dark target="_blank">' + $t_href + '?dark</a>');
 				}
 
 			});
@@ -424,6 +424,10 @@
 			$('.total_n').text(tatal_n);
 			$('.curr_n').text(curr_n);
 			$('.per').text(Math.floor((curr_n / tatal_n) * 100) + '%');
+
+			$(".link a").each(function() {
+				$(this).attr("href", $(this).attr("href") + "?dark");
+			});
 		}
 	</script>
 </body>

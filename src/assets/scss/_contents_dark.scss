@@ -117,12 +117,50 @@
     .step_chart_caption_para,
     .import_para_text,
     .card_title{color:#fff;}
+
+    .sc_box_row,
+    .sc_box_container{border-color:rgba(255,255,255,.4)}
+
+    .sc_process_label_cols{background-color:transparent}
+    .sc_process_bullet_cols{background-color:#26272f;}
+    .sc_process_tail{background-image:url("../images/end_img_w.png");background-color:#26272f;}
+
+    .sc_form_label{color:#fff;}
+
+    .finish_main_copy{color:#fff;}
+    .finish_sub_copy{color:#fff;}
+
+    .rendar_fieldset_title,
+    .sctab_box_text{color:#fff;}
+    .sctab_box_list{background: transparent;}
+
+    .rendar_fieldset_row{background-color:#1b1b22;border-color:#1b1b22;}
+
+    .guide_scbox{background-color:#1b1b22;border-color:#1b1b22;}
+    .ico_guide_scbox{border-color:rgba(255,255,255,.4); background-image:url("../images/ico_tong_40_w.png"); background-color:transparent}
+    .guide_sckeyword{background: transparent;border-color:rgba(255,255,255,.4);color:#fff;}
+    .guide_scbox_copy{color:#fff;}
+    .obj_value_text{color:#fff;}
+    .obj_tail_data_list{color:#fff;}
+    .history_box_item{border-color:rgba(255,255,255,.4)}
+    .history_box_caption{color:#fff;}
+    .card_history_title_row{background: transparent;border-color:rgba(255,255,255,.4);color:#fff;}
+    .obj_key_cols{background: transparent;}
+    .obj_item_caption,
+    .tail_data_para,
+    .status_obj_key,
+    .obj_item_util_text{color:#fff;}
+    .card_history_box{border-color:rgba(255,255,255,.4);}
 }
+
 
 @media (max-width:1023px){
     .dark_theme{
         .middle_visual_pixin{
             background-image:url("../images/bg_visual_dark.png") !important;
+        }
+        .sc_process_item_list_wrap{
+            background-color:transparent;
         }
     }
 }

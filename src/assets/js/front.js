@@ -628,3 +628,31 @@ DesignModal.prototype.bindEvent = function(option) {
   }
 };
 
+function maxHeightFunc(targetGroup) {
+  groupAction();
+  resizeAction(() => {
+    groupAction();
+  })
+
+  function groupAction() {
+    [...targetGroup].forEach((item) => {
+      elementFunc(item);
+    });
+  }
+
+  function elementFunc(target) {
+    const heightTarget = document.querySelectorAll(target);
+    let heightArray = [];
+    heightTarget.forEach((item) => {
+      item.removeAttribute("style");
+    });
+    heightTarget.forEach((item) => {
+      heightArray.push(item.getBoundingClientRect().height);
+    });
+    if (window.innerWidth >= 1024) {
+      heightTarget.forEach((item) => {
+        item.style.height = Math.max.apply(null, heightArray) + "px";
+      });
+    }
+  }
+}

@@ -156,9 +156,9 @@ function chkList(){
 			$t_href = $this.attr("href");
 		
 		if($this.parent(".link").hasClass("type2")){
-			$this.parent("td").next(".td_url").append('<a href='+$t_href+'>'+$t_href+'</a>');
+			$this.parent("td").next(".td_url").append('<a href='+$t_href+'?dark>'+$t_href+'?dark</a>');
 		}else{
-			$this.parent("td").next(".td_url").append('<a href='+$t_href+' target="_blank">'+$t_href+'</a>');
+			$this.parent("td").next(".td_url").append('<a href='+$t_href+'?dark target="_blank">'+$t_href+'?dark</a>');
 		}
 		
 	});
@@ -167,6 +167,10 @@ function chkList(){
 	$('.total_n').text(tatal_n);
 	$('.curr_n').text(curr_n);
 	$('.per').text(Math.floor((curr_n/tatal_n)*100) + '%');
+
+	$(".link a").each(function(){
+		$(this).attr("href",$(this).attr("href")+"?dark");
+	});
 }
 </script>
 </body>
