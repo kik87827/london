@@ -4,6 +4,12 @@
     .middle_visual_sub_copy{color:#fff !important;}
     .middle_visual_pixin{
         background-image:url("../images/main_visual_dark.jpg");
+        &.bg_type2{
+            background-image:url("../images/sub_visual_dark.jpg");
+        }
+        &.bg_type3{
+            background-image:url("../images/sub_visual_02_dark.jpg");
+        }
     }
 
     .personal_flexbox_long_cols{background-color:#404050;}
@@ -43,6 +49,11 @@
     }
 
 
+    .copy_guide_card_wrap{
+        &.type2{
+            border-top-color:rgba(255,255,255,.4)
+        }
+    }
     .copy_guide_card{background:#30313a;}
     .btn_copy_box{
         background:#45464e;
@@ -63,12 +74,55 @@
     .sub_title{color:#fff;}
 
     .card_pro_render{background-color:#1b1b22;}
+
+    select.form_select{color:#fff;border:1px solid rgba(255,255,255,.4);
+        background-color:transparent; background-image:url("../images/ico_select_allow_w.png");
+    
+        &::-ms-value {background: none; color:#fff;}
+        &::-ms-expand {display: none;}
+        &.ready_select{color:#9c9c9c;}
+    }
+
+    input.form_input{border:1px solid rgba(255,255,255,.4); background-color:transparent; color:#fff;}
+    .btn_ico_submit{border:1px solid rgba(255,255,255,.4); background-color:transparent; background-image:url("../images/ico_search_40_w.png");}
+
+    .rendar_bar_item{background-color:#1b1b22;border-color:#1b1b22;}
+    .rendar_bar_ico{background-image:url("../images/ico_wallet_33_w.png")}
+    .data_primary_text,
+    .rendar_bar_text{color:#fff;}
+    .data_item_list{
+        > li{border-bottom-color:rgba(255,255,255,.1)}
+    }
+
+    
+    /* pagination */
+    .paginate_button{
+        > a{border-color:rgba(255,255,255,.4);background: transparent;color:rgba(255,255,255,.7)}
+        &.previous a:after, 
+        &.next a:after{border-color:rgba(255,255,255,1);}
+        &.active > a{border-color: #1b1b22;color:#fff;background-color:#1b1b22;}
+    }
+
+
+    .card_box{background:#30313a;border-color:#30313a;}
+
+    .step_bar_current_box,
+    .card_title_row{
+        border-color:rgba(255,255,255,.4)
+    }
+
+    .step_ckey_text,
+    .step_cvalue_text,
+    .step_getbar_fraction,
+    .step_chart_caption_para,
+    .import_para_text,
+    .card_title{color:#fff;}
 }
 
 @media (max-width:1023px){
     .dark_theme{
         .middle_visual_pixin{
-            background-image:url("../images/bg_visual_dark.png");
+            background-image:url("../images/bg_visual_dark.png") !important;
         }
     }
 }
