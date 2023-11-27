@@ -151,6 +151,13 @@
     .status_obj_key,
     .obj_item_util_text{color:#fff;}
     .card_history_box{border-color:rgba(255,255,255,.4);}
+
+    .note_import_box{
+        border-color:rgba(255,193,193,.4);
+        &:before{}
+    }
+    .note_import_para{color:#fff;}
+    .obj_key_cols{color:#fff;}
 }
 
 

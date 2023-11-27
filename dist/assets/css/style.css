@@ -2483,6 +2483,9 @@ html.smooth {
   gap: 1.25rem;
   align-items: center;
 }
+.history_box_item.type2 {
+  padding: 1.75rem 1.5625rem;
+}
 
 .obj_item_wrap {
   display: flex;
@@ -2582,6 +2585,17 @@ html.smooth {
   padding: 1.25rem 2.5rem;
 }
 
+.tail_util_group {
+  white-space: nowrap;
+}
+
+.tail_util_row {
+  margin-bottom: 0.75rem;
+}
+.tail_util_row:last-of-type {
+  margin-bottom: 0;
+}
+
 .status_obj_group {
   display: flex;
   align-items: center;
@@ -2610,6 +2624,39 @@ html.smooth {
   color: #5f5f5f;
   line-height: 1.5;
   margin-top: 0.3125rem;
+}
+
+.rendar_bar_item_wrap {
+  display: flex;
+  gap: 1.25rem;
+}
+.rendar_bar_item_wrap .rendar_bar_item {
+  flex: 1;
+}
+
+.note_import_box {
+  border: 1px solid #ffc1c1;
+  border-radius: 0.75rem;
+  padding: 1.125rem 1.875rem;
+  display: flex;
+  gap: 0.9375rem;
+  margin: 2.5rem 0;
+}
+.note_import_box:before {
+  display: block;
+  content: "";
+  flex: 0 0 1.375rem;
+  width: 1.375rem;
+  height: 1.375rem;
+  border-radius: 100%;
+  border: 0.125rem solid #f84242;
+  background: url("../images/ico_import_44.png") no-repeat 50% 50%/1.375rem auto;
+}
+
+.note_import_para {
+  font-size: 0.9375rem;
+  color: #4e4e4e;
+  padding-top: 0.125rem;
 }
 
 @media (max-width: 1023px) {
@@ -2843,6 +2890,9 @@ html.smooth {
     padding: 0.9375rem;
     gap: 0.9375rem;
   }
+  .history_box_item.type2 {
+    padding: 1.25rem 0.9375rem;
+  }
   .obj_item_wrap {
     flex-wrap: wrap;
     gap: 0.3125rem;
@@ -2904,6 +2954,17 @@ html.smooth {
   .tail_data_para {
     font-size: 0.875rem;
     margin-top: 0.3125rem;
+  }
+  .rendar_bar_item_wrap {
+    flex-direction: column;
+  }
+  .note_import_box {
+    margin: 1.875rem 0;
+    gap: 0.625rem;
+    padding: 1.25rem;
+  }
+  .note_import_para {
+    font-size: 0.875rem;
   }
 }
 /* 공통 alert confirm */
@@ -5130,6 +5191,9 @@ input.form_input.place_type2::input-placeholder {
   padding: 0 1.875rem;
   position: relative;
 }
+.sub_contents_zone > .copy_guide_card_wrap {
+  padding: 0;
+}
 
 .sub_title_row {
   margin-bottom: 4.375rem;
@@ -5907,6 +5971,29 @@ input.form_input.place_type2::input-placeholder {
   margin-top: 3.75rem;
 }
 
+.value_obj_group {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  justify-content: flex-end;
+  gap: 0.3125rem;
+}
+
+.value_obj_value,
+.value_obj_unit {
+  display: inline-block;
+  line-height: 1;
+  color: #2b8bf2;
+}
+
+.value_obj_value {
+  font-size: 1.25rem;
+}
+
+.value_obj_unit {
+  font-size: 1.0625rem;
+}
+
 @media (max-width: 1150px) {
   .personal_profile_box {
     flex-direction: column;
@@ -6225,7 +6312,7 @@ input.form_input.place_type2::input-placeholder {
     margin-bottom: 0;
   }
   .copy_guide_card_wrap {
-    margin-top: 1.875rem;
+    margin-top: 2.5rem;
   }
   .card_pro_flex_wrap {
     flex-direction: column;
@@ -6988,6 +7075,15 @@ input.form_input.place_type2::input-placeholder {
 }
 .dark_theme .card_history_box {
   border-color: rgba(255, 255, 255, 0.4);
+}
+.dark_theme .note_import_box {
+  border-color: rgba(255, 193, 193, 0.4);
+}
+.dark_theme .note_import_para {
+  color: #fff;
+}
+.dark_theme .obj_key_cols {
+  color: #fff;
 }
 
 @media (max-width: 1023px) {
