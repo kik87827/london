@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/select2.min.js"></script>
+	<script src="./assets/js/front.js"></script>
+	<script>
+		// 퍼블확인용
+		let theme = window.location.href.split('?')[1];
+		let theme_2 = theme !== undefined ? theme.split('#')[0] : null;
+
+		if (theme_2 === "dark") {
+			document.querySelector("html").classList.add("dark_theme");
+		}
+	</script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<section class="middle_wrap">
+			작업중
+		</section>
+		<footer class="footer_wrap">
+			<div class="footer_pix">
+				<div class="footer_item_group">
+					<span class="footer_item"><span class="hdtext">LONDON CARD</span></span>
+					<p class="footer_item_para">COPYRIGHT (C) LONDON CARD. ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+			<a href="#" class="btn_bottom_go"></a>
+		</footer>
+	</div>
+</body>
+
+</html>
