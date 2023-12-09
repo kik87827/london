@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 window.addEventListener("load", () => {
   layoutFunc();
+  responWidthFunc();
 });
 
 $(function() {})
@@ -657,5 +658,44 @@ function maxHeightFunc(targetGroup) {
         item.style.height = Math.max.apply(null, heightArray) + "px";
       });
     }
+  }
+}
+
+
+function responWidthFunc() {
+  const pcwidDom = document.querySelectorAll("[data-pcwidth]");
+
+  action();
+  window.addEventListener("resize", () => {
+    action();
+  });
+
+  function action() {
+    if (!!pcwidDom) {
+      pcwidDom.forEach((item) => {
+        const thisItem = item;
+        const thisPcwid = thisItem.dataset.pcwidth;
+        if (window.innerWidth > 1023) {
+          thisItem.style.width = thisPcwid + 'px';
+        } else {
+          thisItem.style.removeProperty("width");
+        }
+      });
+    }
+  }
+}
+
+
+function toggleBoard() {
+  const toggle_board_bar = document.querySelectorAll(".toggle_board_bar");
+  if (!!toggle_board_bar) {
+    toggle_board_bar.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const thisItem = e.currentTarget;
+        const thisParent = thisItem.closest("li");
+        thisParent.classList.toggle("active");
+      });
+    });
   }
 }
