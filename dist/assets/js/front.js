@@ -699,3 +699,23 @@ function toggleBoard() {
     });
   }
 }
+
+
+function passWordInput() {
+  const btn_eye = document.querySelectorAll(".btn_form_control.ico_eye");
+  if (!!btn_eye) {
+    btn_eye.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        const thisItem = e.currentTarget;
+        const thisParent = thisItem.closest(".form_input_field");
+        const thisInput = thisParent.querySelector(".form_input_origin");
+        thisItem.classList.toggle("active");
+        if (thisItem.classList.contains("active")) {
+          thisInput.setAttribute("type", "text");
+        } else {
+          thisInput.setAttribute("type", "password");
+        }
+      });
+    });
+  }
+}
