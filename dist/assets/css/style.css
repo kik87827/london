@@ -4543,6 +4543,24 @@ input.form_input.place_type3::input-placeholder {
 .middle_visual_pixin.bg_type3 {
   background-image: url("../images/sub_visual_02.jpg");
 }
+.middle_visual_pixin.bg_type4 {
+  background-image: url("../images/sub_visual_03.jpg");
+}
+.middle_visual_pixin.bg_type5 {
+  background-image: url("../images/sub_visual_04.jpg");
+}
+.middle_visual_pixin.bg_type6 {
+  background-image: url("../images/sub_visual_05.jpg");
+}
+.middle_visual_pixin.bg_type7 {
+  background-image: url("../images/sub_visual_06.jpg");
+}
+.middle_visual_pixin.bg_type8 {
+  background-image: url("../images/sub_visual_07.jpg");
+}
+.middle_visual_pixin.bg_type9 {
+  background-image: url("../images/sub_visual_08.jpg");
+}
 
 .middle_visual_copy_group {
   padding: 3.4375rem 0;
@@ -6257,6 +6275,24 @@ input.form_input.place_type3::input-placeholder {
   }
   .middle_visual_wrap.sub_type2 .middle_visual_pixin.bg_type3 .mb_obj:after {
     background-image: url("../images/bg_mb_sv_eur_02_obj.png");
+  }
+  .middle_visual_wrap.sub_type2 .middle_visual_pixin.bg_type4 .mb_obj:after {
+    background-image: url("../images/bg_mb_sv_eur_03_obj.png");
+  }
+  .middle_visual_wrap.sub_type2 .middle_visual_pixin.bg_type5 .mb_obj:after {
+    background-image: url("../images/bg_mb_sv_eur_04_obj.png");
+  }
+  .middle_visual_wrap.sub_type2 .middle_visual_pixin.bg_type6 .mb_obj:after {
+    background-image: url("../images/bg_mb_sv_eur_05_obj.png");
+  }
+  .middle_visual_wrap.sub_type2 .middle_visual_pixin.bg_type7 .mb_obj:after {
+    background-image: url("../images/bg_mb_sv_eur_06_obj.png");
+  }
+  .middle_visual_wrap.sub_type2 .middle_visual_pixin.bg_type8 .mb_obj:after {
+    background-image: url("../images/bg_mb_sv_eur_07_obj.png");
+  }
+  .middle_visual_wrap.sub_type2 .middle_visual_pixin.bg_type9 .mb_obj:after {
+    background-image: url("../images/bg_mb_sv_eur_08_obj.png");
   }
   .middle_visual_wrap.sub_type2 .mb_obj:after {
     background-image: url("../images/bg_mb_sv_02_obj.png");
@@ -8058,6 +8094,24 @@ input.form_input_origin::input-placeholder {
 }
 .dark_theme .middle_visual_pixin.bg_type3 {
   background-image: url("../images/sub_visual_02_dark.jpg");
+}
+.dark_theme .middle_visual_pixin.bg_type4 {
+  background-image: url("../images/sub_visual_03_dark.jpg");
+}
+.dark_theme .middle_visual_pixin.bg_type5 {
+  background-image: url("../images/sub_visual_04_dark.jpg");
+}
+.dark_theme .middle_visual_pixin.bg_type6 {
+  background-image: url("../images/sub_visual_05_dark.jpg");
+}
+.dark_theme .middle_visual_pixin.bg_type7 {
+  background-image: url("../images/sub_visual_06_dark.jpg");
+}
+.dark_theme .middle_visual_pixin.bg_type8 {
+  background-image: url("../images/sub_visual_07_dark.jpg");
+}
+.dark_theme .middle_visual_pixin.bg_type9 {
+  background-image: url("../images/sub_visual_08_dark.jpg");
 }
 .dark_theme .personal_flexbox_long_cols {
   background-color: #404050;

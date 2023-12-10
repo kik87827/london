@@ -964,6 +964,24 @@ input.form_input{color:#333;font-size:rem(16);border:1px solid #cccccc;height: r
     &.bg_type3{
         background-image:url("../images/sub_visual_02.jpg");
     }
+    &.bg_type4{
+        background-image:url("../images/sub_visual_03.jpg");
+    }
+    &.bg_type5{
+        background-image:url("../images/sub_visual_04.jpg");
+    }
+    &.bg_type6{
+        background-image:url("../images/sub_visual_05.jpg");
+    }
+    &.bg_type7{
+        background-image:url("../images/sub_visual_06.jpg");
+    }
+    &.bg_type8{
+        background-image:url("../images/sub_visual_07.jpg");
+    }
+    &.bg_type9{
+        background-image:url("../images/sub_visual_08.jpg");
+    }
 }
 .middle_visual_copy_group{
     padding:rem(55) 0; color:#162b3f;
@@ -1511,12 +1529,40 @@ background: linear-gradient(90deg, rgba(113,116,251,1) 0%, rgba(139,142,255,1) 5
                         &:after{background-image:url("../images/bg_mb_sv_eur_02_obj.png");}
                     }
                 }
+                &.bg_type4{
+                    .mb_obj{
+                        &:after{background-image:url("../images/bg_mb_sv_eur_03_obj.png");}
+                    }
+                }
+                &.bg_type5{
+                    .mb_obj{
+                        &:after{background-image:url("../images/bg_mb_sv_eur_04_obj.png");}
+                    }
+                }
+                &.bg_type6{
+                    .mb_obj{
+                        &:after{background-image:url("../images/bg_mb_sv_eur_05_obj.png");}
+                    }
+                }
+                &.bg_type7{
+                    .mb_obj{
+                        &:after{background-image:url("../images/bg_mb_sv_eur_06_obj.png");}
+                    }
+                }
+                &.bg_type8{
+                    .mb_obj{
+                        &:after{background-image:url("../images/bg_mb_sv_eur_07_obj.png");}
+                    }
+                }
+                &.bg_type9{
+                    .mb_obj{
+                        &:after{background-image:url("../images/bg_mb_sv_eur_08_obj.png");}
+                    }
+                }
             }
             .mb_obj{
                 &:after{background-image:url("../images/bg_mb_sv_02_obj.png");}
-            }
-
-            
+            } 
         }
     }
     .middle_visual_copy_group{
