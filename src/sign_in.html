@@ -75,7 +75,7 @@
                                 <p class="global_capcha_copy">TO change the image character</p>
                             </div>
                             <div class="global_capcha_form_group">
-                                <input type="text" class="form_input placeholder_c place_small" placeholder="Please enter image characters">
+                                <input type="text" class="form_input placeholder_c" placeholder="Please enter image characters">
                             </div>
                             <div class="global_outform_group"><img src="./assets/images/temp_cloud.jpg" alt=""></div>
                         </div>
@@ -122,7 +122,7 @@
             // 퍼블확인용
             let url = window.location.href.split('?')[1];
             let url_2 = url !== undefined ? url.split('#')[0] : null;
-            if(url_2 === "popup"){
+            if(url_2.indexOf("popup") !== -1){
                 idpwPopup.popupShow();
             }
 		</script>

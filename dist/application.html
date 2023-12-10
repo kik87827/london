@@ -15,8 +15,7 @@
 		// 퍼블확인용
 		let theme = window.location.href.split('?')[1];
 		let theme_2 = theme !== undefined ? theme.split('#')[0] : null;
-
-		if (theme_2 === "dark") {
+		if (window.location.href.indexOf("dark") !== -1) {
 			document.querySelector("html").classList.add("dark_theme");
 		}
 	</script>
@@ -186,7 +185,7 @@
 				</div>
 			</div>
 			<div class="sub_contents_zone">
-				<div class="sub_title_row">
+				<div class="sub_title_row type2">
 					<h3 class="sub_title">Application for paid members</h3>
 				</div>
 				<div class="sub_contents_row">

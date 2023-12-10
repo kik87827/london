@@ -15,8 +15,7 @@
 		// 퍼블확인용
 		let theme = window.location.href.split('?')[1];
 		let theme_2 = theme !== undefined ? theme.split('#')[0] : null;
-
-		if (theme_2 === "dark") {
+		if (window.location.href.indexOf("dark") !== -1) {
 			document.querySelector("html").classList.add("dark_theme");
 		}
 	</script>
@@ -210,8 +209,97 @@
 					<h3 class="sub_title">MY CARDS</h3>
 				</div>
 				<div class="sub_contents_row">
-					<p style="font-size:16px;">EUR 카드 카테고리 내용과 형식은 USDT 형식과 동일한 구성입니다. - 퍼블에서 컨텐츠는 생략(컨포넌트 페이지로 전달예정)</p>
+					<div class="card_pro_flex_wrap">
+						<div class="card_pro_img_cols">
+							<div class="wallet_flexbox_title_row op_hidden">
+								<p class="wallet_flexbox_title">Transaction History</p>
+							</div>
+							<div class="card_pro_render">
+								<div class="card_pro_render_inner">
+									<div class="card_pro_logo_number_row">
+										<div class="card_pro_logo_row">
+											<div class="card_pro_logo_img"><img src="./assets/images/ico_card_logo.png" alt=""></div>
+											<div class="card_pro_logo_text">USDT Card</div>
+										</div>
+										<div class="card_pro_number_row">
+											<p class="card_pro_number_main">1234 5678 0011 1100</p>
+											<p class="card_pro_number_sub">Balance: 12,333,718.00</p>
+										</div>
+									</div>
+									<div class="card_pro_copy_row">
+										<p class="card_pro_copy">Active status : Success</p>
+									</div>
+									<button type="button" class="btn_card_pro_more"></button>
+								</div>
+							</div>
+							<div class="card_pro_btn_row">
+								<a href="#" class="btn_copy_box type2"><span class="btn_copy_box_text">Application for charging</span></a>
+							</div>
+						</div>
+						<div class="card_pro_spec_cols">
+							<div class="wallet_flexbox_container">
+								<div class="wallet_flexbox_title_row">
+									<p class="wallet_flexbox_title">Transaction History</p>
+								</div>
+								<div class="wallet_flexbox_contents">
+									<div class="wallet_flexbox_data_row">
+										<ul class="wft_data_list type2">
+											<li>
+												<div class="wft_summary_cols">
+													<p class="wft_summary_para">minsan1(minsan1) Card Insert Payback</p>
+													<div class="wft_flag_row">
+														<span class="text_flagbox">USDT</span>
+													</div>
+												</div>
+												<div class="wft_value_cols">
+													<div class="wft_value_group">
+														<i class="ico_wft"></i>
+														<span class="wft_value_text">2.41338918</span>
+													</div>
+													<p class="wft_value_else">2023-08-30 09:00:00</p>
+												</div>
+											</li>
+											<li>
+												<div class="wft_summary_cols">
+													<p class="wft_summary_para">minsan1(minsan1) Card Insert Payback</p>
+													<div class="wft_flag_row">
+														<span class="text_flagbox">USDT</span>
+													</div>
+												</div>
+												<div class="wft_value_cols">
+													<div class="wft_value_group type2">
+														<i class="ico_wft"></i>
+														<span class="wft_value_text">2.41338918</span>
+													</div>
+													<p class="wft_value_else">2023-08-30 09:00:00</p>
+												</div>
+											</li>
+											<li>
+												<div class="wft_summary_cols">
+													<p class="wft_summary_para">minsan1(minsan1) Card Insert Payback</p>
+													<div class="wft_flag_row">
+														<span class="text_flagbox">USDT</span>
+													</div>
+												</div>
+												<div class="wft_value_cols">
+													<div class="wft_value_group">
+														<i class="ico_wft"></i>
+														<span class="wft_value_text">2.41338918</span>
+													</div>
+													<p class="wft_value_else">2023-08-30 09:00:00</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="wallet_flexbox_btn_row">
+										<a href="#" class="btn_link_box"><span class="btn_link_box_text">View Details</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+
 			</div>
 		</section>
 		<footer class="footer_wrap">

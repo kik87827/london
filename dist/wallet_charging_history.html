@@ -15,8 +15,7 @@
 		// 퍼블확인용
 		let theme = window.location.href.split('?')[1];
 		let theme_2 = theme !== undefined ? theme.split('#')[0] : null;
-
-		if (theme_2 === "dark") {
+		if (window.location.href.indexOf("dark") !== -1) {
 			document.querySelector("html").classList.add("dark_theme");
 		}
 	</script>
