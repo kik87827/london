@@ -6284,7 +6284,7 @@ input.form_input.place_type3::input-placeholder {
     background: url("../images/bg_visual.png") no-repeat 100% 100%/300px auto !important;
     padding: 0;
     display: block;
-    min-height: 15rem;
+    min-height: 13.75rem;
     /*  &.bg_type2{
          background-image:url("../images/sub_visual.jpg");
      } */
@@ -6327,7 +6327,7 @@ input.form_input.place_type3::input-placeholder {
     background-image: url("../images/bg_mb_sv_02_obj.png");
   }
   .middle_visual_copy_group {
-    padding: 1.875rem 1.25rem 0;
+    padding: 1.25rem 1.25rem 0;
     position: relative;
     z-index: 2;
   }
