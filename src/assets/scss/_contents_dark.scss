@@ -333,6 +333,17 @@
 
     .sctab_box_list_wrap{border-bottom-color:#3c3d46;}
     .sctab_box{background-color:#30313a;}
+
+
+    .chkrd_label{color:#fff;}
+    .chkrd_label:before{}
+    .chkrd.checked{background-position:0 -21px;border-color:#585cf2;background-color:#585cf2;}
+    .chkrd:checked{background-position:0 -19px;border-color:#585cf2;background-color:#585cf2;}
+
+    .pcont_inwrap,
+    .pcont_inwrap *,
+    .pcont_subtitle{color:#fff;}
+    .popup_btnlow{}
 }
 
 

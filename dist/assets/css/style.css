@@ -994,6 +994,14 @@ img.ico_img {
   flex: 0 0 166px;
 }
 
+.guide_toplogo_img img.white {
+  display: inline-block;
+}
+
+.guide_toplogo_img img.dark {
+  display: none;
+}
+
 .guide_toplogo_img img {
   max-width: 100%;
   vertical-align: top;
@@ -1413,6 +1421,27 @@ img.ico_img {
     font-size: 12px;
   }
 }
+/* dark */
+.dark_theme .guide_toplogo_img img.white {
+  display: none;
+}
+.dark_theme .guide_toplogo_img img.dark {
+  display: inline-block;
+}
+.dark_theme .guide_toplogo_text {
+  color: #fff;
+  opacity: 0.5;
+}
+.dark_theme .guide_contents_title {
+  color: #fff;
+}
+.dark_theme .guide_contents_title_copy {
+  color: #fff;
+}
+.dark_theme .guide_contents_title_copy:before {
+  background: #999;
+}
+
 @font-face {
   font-family: "Noto Sans KR";
   src: url("./webfont/NotoSans-Bold.eot");
@@ -9241,7 +9270,24 @@ input.form_input_origin::input-placeholder {
 .dark_theme .sctab_box {
   background-color: #30313a;
 }
-
+.dark_theme .chkrd_label {
+  color: #fff;
+}
+.dark_theme .chkrd.checked {
+  background-position: 0 -21px;
+  border-color: #585cf2;
+  background-color: #585cf2;
+}
+.dark_theme .chkrd:checked {
+  background-position: 0 -19px;
+  border-color: #585cf2;
+  background-color: #585cf2;
+}
+.dark_theme .pcont_inwrap,
+.dark_theme .pcont_inwrap *,
+.dark_theme .pcont_subtitle {
+  color: #fff;
+}
 @media (max-width: 1023px) {
   .dark_theme .middle_visual_pixin {
     background-image: url("../images/bg_visual_dark.png") !important;
