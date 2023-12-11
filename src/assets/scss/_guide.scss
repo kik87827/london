@@ -8,6 +8,8 @@
 .guide_toplogo{display:inline-block;line-height:0;font-size:0;line-height:0;}
 .guide_toplogo_item{display:flex;gap:10px 20px;align-items: center;flex-wrap:wrap;}
 .guide_toplogo_img{flex:0 0 166px;}
+.guide_toplogo_img img.white{display:inline-block;}
+.guide_toplogo_img img.dark{display:none;}
 .guide_toplogo_img img{max-width:100%;vertical-align: top;}
 .guide_toplogo_text{font-size:18px;font-weight:700;line-height:1.2;word-break: keep-all;white-space: nowrap; }
 .guide_util_group{flex:1;display:flex;align-items: center;justify-content: flex-end;}
@@ -73,6 +75,7 @@
 
 @media (max-width:767px){
     .guide_header{position:sticky;top:0;left:0;background:#fff;z-index:20;}
+
     .header_pix_inner{padding:15px 20px;}
     .guide_toplogo{margin-right:15px;}
     .guide_toplogo_text{font-size:13px;}
@@ -121,4 +124,21 @@
 
 @media (max-width:320px){
     .guide_toplogo_text{white-space: normal;font-size:12px;}
+}
+
+
+
+/* dark */
+
+.dark_theme{
+    .guide_toplogo_img img.white{display:none;}
+    .guide_toplogo_img img.dark{display:inline-block;}
+
+    .guide_toplogo_text{color:#fff;opacity: .5;}
+
+    .guide_contents_title{color:#fff;}
+    .guide_contents_title_copy{
+        color:#fff;
+        &:before{background:#999;}
+    }
 }
