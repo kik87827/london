@@ -5409,11 +5409,16 @@ input.form_input.place_type3::input-placeholder {
 }
 
 .sub_title_row {
-  margin-bottom: 4.375rem;
+  margin-bottom: 3.4375rem;
   text-align: center;
 }
-.sub_title_row.type2 {
-  margin-bottom: 3.5rem;
+.sub_title_row:before {
+  display: block;
+  width: 1px;
+  content: "";
+  background: #6a6a6a;
+  height: 3.125rem;
+  margin: 0 auto 0.9375rem;
 }
 
 .sub_title {
@@ -6402,13 +6407,17 @@ input.form_input.place_type3::input-placeholder {
     margin-bottom: 1.875rem;
   }
   .middle_visual_wrap.sub_type2 {
-    margin-bottom: 3.75rem;
+    margin-bottom: 3.4375rem;
   }
+  /*  .sub_title_row{margin-bottom:rem(40);
+       &.type2{margin-bottom:rem(30);}
+   } */
   .sub_title_row {
     margin-bottom: 2.5rem;
   }
-  .sub_title_row.type2 {
-    margin-bottom: 1.875rem;
+  .sub_title_row:before {
+    height: 1.875rem;
+    margin: 0 auto 0.625rem;
   }
   .sub_title {
     font-size: 1.375rem;
@@ -8192,6 +8201,9 @@ input.form_input_origin::input-placeholder {
 }
 .dark_theme .btn_link_box_text:after {
   border-color: #fff;
+}
+.dark_theme .sub_title_row:before {
+  background-color: #6a6a6a;
 }
 .dark_theme .copy_guide_card_wrap.type2 {
   border-top-color: rgba(255, 255, 255, 0.06);

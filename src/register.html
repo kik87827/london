@@ -40,83 +40,85 @@
                         <p class="global_form_title_sub">Create New LONDON CARD Account</p>
                     </div>
                     <div class="global_form_contents">
-                        <div class="global_form_block has_form type2">
-                            <table class="global_form_tb">
-                                <tr>
-                                    <th><span class="global_form_label">select a country code</span></th>
-                                    <td>
-                                        @@include('country_code.html')
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">ID</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="text" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter 6 to 16 English characters and numbers without spaces">
-                                        </div>
-                                        <p class="respon_placeholder">Please enter 6 to 16 English characters and numbers without spaces</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">Password</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)">
-                                            <button type="button" class="btn_form_control ico_eye"></button>
-                                        </div>
-                                        <p class="respon_placeholder">Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">Confirm password</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter your password one more time">
-                                            <button type="button" class="btn_form_control ico_eye"></button>
-                                        </div>
-                                        <p class="respon_placeholder">Please enter your password one more time</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">Nickname</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter your password one more time">
-                                        </div>
-                                        <p class="respon_placeholder">Please enter your password one more time</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">Mobile</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter the numbers without spaces">
-                                        </div>
-                                        <p class="respon_placeholder">Please enter the numbers without spaces</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">E-mail</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="password" class="form_input_origin">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">Recommendation ID</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="password" class="form_input_origin">
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="global_form_block has_btn type2">
-                            <a href="#" class="btn_form_submit_box"><span class="btn_form_submit_box_text">Register</span></a>
-                            <div class="btn_submit_else_group"><a href="#" class="btn_submit_else">Already have an account? Sing-In</a></div>
-                        </div>
+                        <form>
+                            <div class="global_form_block has_form type2">
+                                <table class="global_form_tb">
+                                    <tr>
+                                        <th><span class="global_form_label">select a country code</span></th>
+                                        <td>
+                                            @@include('country_code.html')
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">ID</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="text" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter 6 to 16 English characters and numbers without spaces">
+                                            </div>
+                                            <p class="respon_placeholder">Please enter 6 to 16 English characters and numbers without spaces</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">Password</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)">
+                                                <button type="button" class="btn_form_control ico_eye"></button>
+                                            </div>
+                                            <p class="respon_placeholder">Mix 8 to 20 English characters, numbers, and special characters (~!@#^_*)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">Confirm password</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter your password one more time">
+                                                <button type="button" class="btn_form_control ico_eye"></button>
+                                            </div>
+                                            <p class="respon_placeholder">Please enter your password one more time</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">Nickname</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter your password one more time">
+                                            </div>
+                                            <p class="respon_placeholder">Please enter your password one more time</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">Mobile</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="password" name="pc_only_placeholder" class="form_input_origin" placeholder="Please enter the numbers without spaces">
+                                            </div>
+                                            <p class="respon_placeholder">Please enter the numbers without spaces</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">E-mail</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="password" class="form_input_origin">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">Recommendation ID</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="password" class="form_input_origin">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="global_form_block has_btn type2">
+                                <a href="#" class="btn_form_submit_box"><span class="btn_form_submit_box_text">Register</span></a>
+                                <div class="btn_submit_else_group"><a href="#" class="btn_submit_else">Already have an account? Sing-In</a></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

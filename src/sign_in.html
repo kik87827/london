@@ -36,54 +36,56 @@
             <div class="global_form_cols">
                 <div class="global_form_wrap type2">
                     <div class="global_form_title_row"><h2 class="global_form_title">SIGN-IN</h2></div>
-                    <div class="global_form_contents">
-                        <div class="global_form_block has_form">
-                            <table class="global_form_tb">
-                                <tr>
-                                    <th><span class="global_form_label">Country Code</span></th>
-                                    <td>
-                                        @@include('country_code2.html')
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">ID</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="text" class="form_input_origin" placeholder="Enter Phone Number">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th><span class="global_form_label">Password</span></th>
-                                    <td>
-                                        <div class="form_input_field">
-                                            <input type="password" class="form_input_origin" placeholder="Enter Phone Number">
-                                            <button type="button" class="btn_form_control ico_eye"></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="gf_else_row">
-                                <ul class="gf_else_item_list">
-                                    <li><a href="#" class="gf_else_item">Find ID/Password</a></li>
-                                </ul>
+                    <form>
+                        <div class="global_form_contents">
+                            <div class="global_form_block has_form">
+                                <table class="global_form_tb">
+                                    <tr>
+                                        <th><span class="global_form_label">Country Code</span></th>
+                                        <td>
+                                            @@include('country_code2.html')
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">ID</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="text" class="form_input_origin" placeholder="Enter Phone Number">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="global_form_label">Password</span></th>
+                                        <td>
+                                            <div class="form_input_field">
+                                                <input type="password" class="form_input_origin" placeholder="Enter Phone Number">
+                                                <button type="button" class="btn_form_control ico_eye"></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="gf_else_row">
+                                    <ul class="gf_else_item_list">
+                                        <li><a href="#" class="gf_else_item" id="btn_idpw_call">Find ID/Password</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="global_form_block has_capcha">
+                                <div class="global_capcha_img_group"><img src="./assets/images/ig_sec_word.jpg" alt=""></div>
+                                <div class="global_capcha_copy_group">
+                                    <p class="global_capcha_copy">TO change the image character</p>
+                                </div>
+                                <div class="global_capcha_form_group">
+                                    <input type="text" class="form_input placeholder_c" placeholder="Please enter image characters">
+                                </div>
+                                <div class="global_outform_group"><img src="./assets/images/temp_cloud.jpg" alt=""></div>
+                            </div>
+                            <div class="global_form_block has_btn">
+                                <a href="#" class="btn_form_submit_box"><span class="btn_form_submit_box_text">Sing-In</span></a>
+                                <div class="btn_submit_else_group"><a href="#" class="btn_submit_else">Not a member yet? Create an account</a></div>
                             </div>
                         </div>
-                        <div class="global_form_block has_capcha">
-                            <div class="global_capcha_img_group"><img src="./assets/images/ig_sec_word.jpg" alt=""></div>
-                            <div class="global_capcha_copy_group">
-                                <p class="global_capcha_copy">TO change the image character</p>
-                            </div>
-                            <div class="global_capcha_form_group">
-                                <input type="text" class="form_input placeholder_c" placeholder="Please enter image characters">
-                            </div>
-                            <div class="global_outform_group"><img src="./assets/images/temp_cloud.jpg" alt=""></div>
-                        </div>
-                        <div class="global_form_block has_btn">
-                            <a href="#" class="btn_form_submit_box"><span class="btn_form_submit_box_text">Sing-In</span></a>
-                            <div class="btn_submit_else_group"><a href="#" class="btn_submit_else">Not a member yet? Create an account</a></div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -119,10 +121,11 @@
 
             passWordInput();
 
-            // 퍼블확인용
-            let url = window.location.href.split('?')[1];
-            let url_2 = url !== undefined ? url.split('#')[0] : null;
-            if(url_2.indexOf("popup") !== -1){
+            document.querySelector("#btn_idpw_call").addEventListener("click",(e)=>{
+                e.preventDefault();
+                idpwPopup.popupShow();
+            });
+            if(window.location.href.indexOf("popup") !== -1){
                 idpwPopup.popupShow();
             }
 		</script>
