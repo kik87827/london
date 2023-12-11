@@ -1231,7 +1231,7 @@ img.ico_img {
   margin: 20px 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .guide_header {
     position: -webkit-sticky;
     position: sticky;
@@ -1239,6 +1239,9 @@ img.ico_img {
     left: 0;
     background: #fff;
     z-index: 20;
+  }
+  .guide_middle {
+    padding: 30px 20px;
   }
   .header_pix_inner {
     padding: 15px 20px;

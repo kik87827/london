@@ -71,8 +71,9 @@
 .vertical_render2_wrap{margin:20px 0;
 }
 
-@media (max-width:767px){
+@media (max-width:1023px){
     .guide_header{position:sticky;top:0;left:0;background:#fff;z-index:20;}
+    .guide_middle{padding:30px 20px;}
     .header_pix_inner{padding:15px 20px;}
     .guide_toplogo{margin-right:15px;}
     .guide_toplogo_text{font-size:13px;}
