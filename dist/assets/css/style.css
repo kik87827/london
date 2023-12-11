@@ -4586,7 +4586,7 @@ input.form_input.place_type3::input-placeholder {
 .mb_obj {
   display: none;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   right: 0;
   width: 160px;
   height: 160px;
@@ -6284,7 +6284,7 @@ input.form_input.place_type3::input-placeholder {
     background: url("../images/bg_visual.png") no-repeat 100% 100%/300px auto !important;
     padding: 0;
     display: block;
-    min-height: 14.375rem;
+    min-height: 15rem;
     /*  &.bg_type2{
          background-image:url("../images/sub_visual.jpg");
      } */
@@ -7052,7 +7052,7 @@ input.form_input.place_type3::input-placeholder {
   }
   .mb_obj {
     width: 280px;
-    bottom: 0;
+    bottom: 10px;
   }
   .mb_obj:after {
     width: 180px;
