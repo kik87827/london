@@ -146,10 +146,10 @@
     .import_para_text,
     .card_title{color:#fff;}
 
-    .sc_box_row,
+    .sc_box_row{border-bottom-color: rgba(255,255,255,.06)}
     .sc_box_container{border-color:#30313a;background-color:#30313a;}
 
-    .sc_process_label_cols{background-color:#26272f}
+    .sc_process_label_cols{background-color:#26272f;border-color:#7275fb;}
     .sc_process_bullet_cols{background-color:#26272f;}
     .sc_process_tail{background-image:url("../images/end_img_w.png");background-color:#30313a;}
 
@@ -188,7 +188,10 @@
     .status_obj_value{background-color:#26272f;}
 
     .note_import_box{
-        border-color:rgba(255,193,193,.4); background-color:#30313a;
+        border-color:#98383f; background-color:#30313a;
+        &.type2{
+            border-color:#30313a;
+        }
         &:before{}
     }
     .note_import_para{color:#fff;}
@@ -326,6 +329,10 @@
     }
 
     .global_form_title_sub{color:#fff;}
+
+
+    .sctab_box_list_wrap{border-bottom-color:#3c3d46;}
+    .sctab_box{background-color:#30313a;}
 }
 
 

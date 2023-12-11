@@ -4,7 +4,7 @@
     .header_wrap{background:#585cf2;
         &::before{background-color:#fff;opacity:.3;}
     }
-    .nav_depth_list_wrap{background:#585cf2;}
+    .nav_depth_list_wrap{background:#585cf2;border-bottom-color:#585cf2;}
     .toplogo_link{background-image:url("../images/toplogo_w.png")}
     .nav_menu{color:#fff;
         &:after{background-color:#fff;}
@@ -19,6 +19,15 @@
         .hgroup_util_item{background:#585cf2;
             &:after{border-right:1px solid rgba(255,255,255,.8);border-bottom:1px solid rgba(255,255,255,.8);}
         }
+    }
+    .global_head_form_layer{
+        .hgroup_util_toggle_item{
+           .hgroup_util_item{background:#26272f;
+           }
+           .hgroup_util_option_list_wrap{
+            background:#26272f;
+           }
+       }
     }
     .ico_nation{background-image:url("../images/ico_earth_img_w.png")}
     .hgroup_util_item {
@@ -42,7 +51,7 @@
     .mbutil_low{background:#585cf2;}
     .mobile_mainmenu_wrap{background:#26272f}
     .mbmenu_vlist{
-        > li{border-bottom-color:rgba(255,255,255,.3)}
+        > li{border-bottom-color:rgba(255,255,255,.1)}
     }
     .mbmenu_one{color:#fff;opacity:.9}
 
