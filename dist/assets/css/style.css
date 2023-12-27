@@ -1776,7 +1776,17 @@ body ::-webkit-scrollbar-track {
   color: #333;
   position: relative;
   z-index: 3;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
   /* &:hover{background:#ebebeb;} */
+}
+
+input[type=submit].hgroup_option_item {
+  background: none;
+  width: 100%;
+  font-family: "Noto Sans KR", Dotum, verdana, sans-serif;
 }
 
 .btn_hgroup_menu {
